@@ -120,7 +120,21 @@ body {
 .contacts-nav .link:hover,
 .contacts-nav .link:focus {
   color: var(--accent-color);
+  text-decoration: underline;
 }
+
+.icon-mail {
+  width: 16px;
+  height: 12px;
+  /* background-color: tomato; */
+  fill: var(--primary-text-color);
+  margin-right: 10px;
+}
+
+.icon-mail:hover {
+  fill: var(--accent-color);
+}
+
 /* Герой */
 .hero {
   padding-top: 200px;
@@ -234,20 +248,25 @@ body {
   background-position: center;
   margin-bottom: 30px;
 }
+
 .icon-antena::before {
   background-image: url("../img/antena.svg");
+  background-size: 70px;
 }
 
 .icon-clock::before {
   background-image: url("../img/clock.svg");
+  background-size: 70px;
 }
 
 .icon-diagram::before {
   background-image: url("../img/diagram.svg");
+  background-size: 70px;
 }
 
 .icon-astronaut::before {
   background-image: url("../img/astronaut.svg");
+  background-size: 70px;
 }
 
 /* Приклади робіт */
@@ -295,7 +314,7 @@ body {
 
 .card-team {
   padding-top: 30px;
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
   padding-left: auto;
   padding-right: auto;
 }
@@ -306,6 +325,24 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+.soc {
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+  margin-top: 16px;
+  margin-bottom: 30px;
+}
+
+.soc-item {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgb(37, 161, 68);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Футер */
