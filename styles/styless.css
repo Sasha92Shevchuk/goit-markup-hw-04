@@ -406,7 +406,7 @@ body {
   padding-bottom: 60px;
   background-color: #2f303a;
 }
-.footer > .container > .logo {
+.footer-contacts > .logo {
   display: block;
   margin-bottom: 20px;
   margin-right: 0;
@@ -419,6 +419,11 @@ body {
 .studio:focus {
   color: var(--accent-color);
 }
+
+/* .logo-footer:hover,
+.logo-footer:focus {
+  color: var(--accent-color);
+} -  не працює???? */
 
 .map-link {
   display: block;
@@ -445,6 +450,31 @@ body {
 }
 .address {
   font-style: normal;
+}
+
+.footer > .container {
+  display: flex;
+}
+
+.footer-soc {
+  margin-left: 70px;
+  padding-top: 12px;
+}
+
+.footer-soc > .title {
+  margin-bottom: 20px;
+  color: var(--accent-white-color);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.footer-soc-link {
+  background: rgba(255, 255, 255, 0.1);
+}
+.footer-soc-link .soc-icon {
+  fill: #ffffff;
 }
 
 /* Розмітка шрифтів */
@@ -499,6 +529,8 @@ a {
 .button-portfolio:focus {
   color: var(--accent-white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .list.btn {
@@ -522,6 +554,12 @@ a {
   margin-left: var(--card-ptf);
   margin-top: var(--card-ptf);
   flex-basis: calc(100% / 3 - var(--card-ptf));
+}
+
+.card-ptf > .item:hover,
+.card-ptf > .item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .card-content {
